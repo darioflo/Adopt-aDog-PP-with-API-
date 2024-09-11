@@ -1,0 +1,160 @@
+:root{
+    --first-color:rgb(33, 34, 36);
+    --second-color:rgb(91, 94, 100);
+    --third-color:rgb(238, 238, 238);
+    --fourth-color:rgb(247, 247, 247);
+    --fifth-color: rgb(238,238,238);
+    --color-letters:rgb(48, 56, 65);
+    --opacity:rgba(0,0,0,0.6);
+}
+html{
+    scroll-behavior: smooth;
+    color: var(--first-color);
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--fourth-color);
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--fourth-color);
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--fifth-color);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--first-color);
+    border-radius: .5rem;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: row;
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+    padding: 2rem;
+}
+
+.logo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img{
+    width: 30%;
+    height: 100%;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--fourth-color);
+    font-size: 1.5rem;
+}
+
+form{
+    margin-top: 3rem;
+    width: 60%;
+    height: 60vh;
+    border: thin solid var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.foto{
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img{
+    width: 70%;
+    height: 70%;
+}
+
+.datos{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+input{
+    background-color: var(--fourth-color);
+    border: none;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 2px solid var(--first-color);
+    width: 60%;
+    height: 5vh;
+    padding: .5rem;
+    color: var(--first-color);
+    font-size: 15px;
+}
+
+input::placeholder{
+    color: var(--first-color);
+}
+
+.btns{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+button{
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+    font-family: 'Raleway', sans-serif;
+    transition: box-shadow .5s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: inset 12.5rem 0 0 0 var(--fourth-color);
+    color: var(--first-color);
+    border: thin solid var(--first-color);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;1,100&family=Shantell+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/Diseño sin título (1).png">
+    <link rel="stylesheet" href="./style/form-style.css">
+    <title>Adopt a dog</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a class="back" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#FFF" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg> Regresar</a>
+        </div>
+    </header>
+    <form action="https://formsubmit.co/darioflo19@icloud.com" method="post">
+        <div class="foto">
+            <img src="./assets/dog___cat__1_-removebg-preview.png" alt="dog">
+        </div>
+        <div class="datos">
+            <input type="email" placeholder="Ingresa tu correo" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required name="email" autocomplete="off">
+            <input type="text" placeholder="Ingresa tu nombre" pattern="^[a-zA-Z\s]+$" required name="text" autocomplete="off">
+            <input type="number" name="" placeholder="Ingresa tu numero de telefono" pattern="^\d{10}$" required name="number" autocomplete="off">
+            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+            <div class="btns">
+                <button type="submit" class="enviar">Adoptar</button>
+                <button type="button" class="cancelar"> Cancelar</button>
+            </div>
+        </div>
+    </form>
+</body>
+<script type="module" src="./js/main_form.js"></script>
+</html>
